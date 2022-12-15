@@ -282,9 +282,8 @@ class ScreenHeaderComponent extends PureComponent<ScreenHeaderProps, ScreenHeade
 			return (
 				<TouchableOpacity
 					onPress={onPress}
-
-					accessibilityLabel={_('Sidebar')}
-					accessibilityHint={_('Show/hide the sidebar')}
+					accessibilityLabel={_('Toggle sidebar')}
+					accessibilityHint={_('Show or hide the sidebar')}
 					accessibilityRole="button">
 					<View style={styles.sideMenuButton}>
 						<Icon name="md-menu" style={styles.topIcon} />
@@ -298,8 +297,8 @@ class ScreenHeaderComponent extends PureComponent<ScreenHeaderProps, ScreenHeade
 				<TouchableOpacity
 					onPress={onPress}
 					disabled={disabled}
-
 					accessibilityLabel={_('Back')}
+					accessibilityHint={_('Navigates to the previous screen')}
 					accessibilityRole="button">
 					<View style={disabled ? styles.backButtonDisabled : styles.backButton}>
 						<Icon
@@ -395,7 +394,7 @@ class ScreenHeaderComponent extends PureComponent<ScreenHeaderProps, ScreenHeade
 			return (
 				<CustomButton
 					onPress={onPress}
-
+					accessibilityHint={_('Search for a note')}
 					description={_('Search')}
 					themeId={themeId}
 					contentStyle={styles.iconButton}

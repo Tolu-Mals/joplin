@@ -898,7 +898,7 @@ class Setting extends BaseModel {
 				isGlobal: true,
 			},
 			uncompletedTodosOnTop: { value: true, type: SettingItemType.Bool, storage: SettingStorage.File, isGlobal: true, section: 'note', public: true, appTypes: [AppType.Cli], label: () => _('Uncompleted to-dos on top') },
-			showCompletedTodos: { value: true, type: SettingItemType.Bool, storage: SettingStorage.File, isGlobal: true, section: 'note', public: true, appTypes: [AppType.Cli], label: () => _('Show completed to-dos') },
+			showCompletedTodos: { value: true, type: SettingItemType.Bool, storage: SettingStorage.File, isGlobal: true, section: 'note', public: true, appTypes: [AppType.Cli], label: () => _('Show completed todos') },
 			'notes.sortOrder.field': {
 				value: 'user_updated_time',
 				type: SettingItemType.String,
