@@ -456,7 +456,7 @@ const SideMenuContentComponent = (props: Props) => {
 
 	items.push(makeDivider('divider_all'));
 
-	items.push(renderSidebarButton('folder_header', _('Notebooks'), 'md-folder'));
+	items.push(renderSidebarButton('folder_header', _('Notebooks'), 'md-folder', () => {}));
 
 	if (props.folders.length) {
 		const result = shared.renderFolders(props, renderFolderItem, false);
